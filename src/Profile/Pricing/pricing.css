@@ -1,0 +1,248 @@
+#pricing {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #00000082;
+}
+
+#pricing .modal-content {
+    width: 950px;
+    min-height: 530px;
+}
+#pricing .modal-dialog {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pricing .modal-body .content-name{
+    margin-bottom: 15px;
+}
+#pricing .modal-body .content-name h2{
+    text-align: center;
+    font: normal normal normal 25px/33px Roboto;
+    font-family: sans-serif;
+    letter-spacing: 0;
+    color: #434343;
+    opacity: 1;
+}
+#pricing .modal-body > p{
+    text-align: center;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0;
+    color: #434343;
+    opacity: 1;
+    margin-bottom: 0;
+}
+/******/
+
+
+button {
+    outline: none !important;
+    cursor: pointer;
+}
+
+.pricing-banner {
+    max-width: 580px;
+    margin: 30px auto ;
+}
+
+.pricing-banner .btns-bar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 30px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    box-shadow: 0 0 10px #A2A2A229;
+    border-radius: 28px;
+    opacity: 1;
+    outline: none;
+}
+
+.pricing-banner .billed-btn {
+    width: 280px;
+    height: 55px;
+    background: #ffffff 0 0 no-repeat padding-box;
+    border-radius: 28px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal normal 20px/27px Roboto;
+    letter-spacing: 0;
+    color: #000000;
+    outline: none;
+    border: none;
+    font-family: Sans-Serif;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.pricing-banner .billed-btn.active_btn {
+    background: #EF7921 0 0 no-repeat padding-box;
+    color: #FFFFFF;
+}
+
+.pricing-banner  .hide {
+    display: none !important;
+}
+
+.pricing-banner  .billed-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-banner  .billed-content > div {
+    width: 280px;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    box-shadow: 0 0 10px #A2A2A229;
+    border-radius: 28px;
+    opacity: 1;
+}
+
+.pricing-banner .billed-content .head-bar {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 28px 28px 0 0;
+}
+
+.pricing-banner .billed-content .starter-content .head-bar {
+    background-color: #EF7921;
+}
+
+.pricing-banner .billed-content .team-content .head-bar {
+    background-color: #FBD7BD;
+}
+
+.pricing-banner .billed-content .team-content .head-bar p {
+    color: #000000;
+}
+
+.pricing-banner .billed-content .body-bar {
+    text-align: center;
+    padding: 0 65px;
+}
+
+.pricing-banner .billed-content .head-bar p {
+    text-align: center;
+    font: normal normal bold 25px/33px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-family: sans-Serif;
+    margin: 0;
+
+}
+
+.pricing-banner .billed-content .price-content {
+    text-align: center;
+    font: normal normal normal 42px/56px Roboto;
+    letter-spacing: 0px;
+    opacity: 1;
+    color: #000000;
+    padding: 20px 0 0 0;
+    margin: 0;
+    font-family: sans-Serif;
+}
+
+.pricing-banner .billed-content .starter-content .price-content {
+    color: #00BFA1;
+}
+
+.pricing-banner .billed-content .team-content .price-content {
+    color: #2368FF;
+}
+
+
+.pricing-banner .billed-content .paid-content {
+    text-align: center;
+    font: normal normal normal 20px/27px Roboto;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+    margin: 5px 0;
+    font-family: sans-Serif;
+
+}
+
+.pricing-banner  .billed-content .user-quality-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    font-family: sans-Serif;
+
+}
+
+.pricing-banner  .billed-content .user-quality-content p {
+    text-align: center;
+    font: normal normal bold 20px/27px Roboto;
+    color: #000000;
+    opacity: 1;
+    margin: 0;
+    font-family: sans-Serif;
+
+}
+
+.pricing-banner  .billed-content .user-quality-content > span {
+    display: flex;
+    margin-left: 10px;
+
+}
+
+.pricing-banner .billed-content .user-quality-content button{
+    width: 19px;
+    height: 19px;
+    opacity: 1;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.pricing-banner .billed-content .user-quality-content .minus-btn {
+    background-color: #FBD7BD;
+    color: #000000;
+}
+
+.pricing-banner .billed-content .user-quality-content .plus-btn {
+    background-color: #EF7921;
+    color: #ffffff;
+    margin-left: 5px;
+
+}
+
+.pricing-banner .billed-content .get-started-btn {
+    width: 150px;
+    height: 40px;
+    background: #EF7921 0 0 no-repeat padding-box;
+    border-radius: 20px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal normal 13px/17px Roboto;
+    color: #FFFFFF;
+    margin: 20px 0;
+    border: none;
+    font-family: sans-Serif;
+
+}
+
+.pricing-banner .billed-content .description-content {
+    text-align: left;
+    font: normal normal normal 13px/18px Roboto;
+    letter-spacing: 0;
+    color: #434343;
+    opacity: 1;
+    margin: 0 0 20px 0;
+    font-family: sans-Serif;
+
+}

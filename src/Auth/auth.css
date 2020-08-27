@@ -1,0 +1,1490 @@
+#signin_signup, .ForgotPassword, .resetPassword, .thank-you-bar {
+    background-color: #000000b0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.resetPassBar {
+    padding: 0 32px;
+}
+
+.modal-content {
+    border-radius: 20px;
+}
+
+.resetPassBar img {
+    margin: 42px auto 11px;
+    width: 47px;
+    height: 47px;
+    display: block;
+
+}
+
+.resetPassBar h3 {
+    text-align: left;
+    font-size: 23px;
+    line-height: 30px;
+    color: #0265C9;
+}
+
+.resetPassBar p {
+    font-size: 13px;
+    line-height: 20px;
+    color: #434343;
+}
+
+.resetPassBar .markEmail {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    color: #EF7921;
+}
+
+.resetPassBar p a {
+    text-decoration: underline;
+    font-size: 13px;
+    line-height: 20px;
+    color: #0265C9;
+}
+
+.navbar-toggler:focus {
+    outline: none !important;
+}
+
+
+.wrapper {
+    display: flex;
+    background-color: #fafafa;
+    width: 1440px;
+    min-height: 730px;
+    margin: auto;
+    position: relative;
+}
+
+.reset-pass-bar {
+    padding-bottom: 0 !important;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+
+/* Checkbox Style */
+.check-agree-bar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.check-agree-bar input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.check-agree-bar label {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #434343;
+    cursor: pointer;
+
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 13px;
+    width: 13px;
+    background-color: #fff;
+    border: 1px solid #434343;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-agree-bar input:checked ~ .checkmark {
+
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+input:checked ~ .checkmark:after {
+
+    display: block;
+}
+
+.checkmark:after {
+    width: 5px;
+    height: 7px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* /Checkbox Style */
+
+
+/* Range Style */
+
+input[type=range] {
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    border-radius: 6px;
+    height: 2px;
+    width: 213px;
+    background-image: -webkit-gradient(linear,
+    left top,
+    right top,
+    color-stop(70%, #EF7921),
+    color-stop(70%, rgba(0, 0, 0, 0.5)));
+}
+
+input[type="range"]::-moz-range-track {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: #C4C4C4;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+input[type=range]::-moz-range-thumb {
+    -moz-appearance: none !important;
+    background-color: #C4C4C4;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+/* /Range Style */
+
+
+/* Sign-in and Sign-up Modal*/
+
+#signin_signup .modal-dialog {
+    max-width: 370px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+
+}
+
+#signin_signup .modal-content {
+    border-radius: 20px;
+}
+
+#signin_signup .modal-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px 0;
+    min-height: 430px;
+}
+
+#signin_signup .modal-body > div {
+    width: 250px;
+}
+
+#signin_signup .modal-body > div .bar-name {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#signin_signup .modal-body > div .form-group {
+    margin-bottom: 20px;
+}
+
+#signin_signup .modal-body > div .bar-name h2 {
+    font-size: 30px;
+    line-height: 35px;
+    color: #EF7921;
+    margin-bottom: 0;
+}
+
+#signin_signup .modal-body > div .form-group label {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#signin_signup .modal-body > div .form-group label small a {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(106, 106, 106, 0.5);
+}
+
+#signin_signup .modal-body > div .form-group .form-control {
+    border: 1px solid #6A6A6A;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 15px;
+    line-height: 16px;
+    padding: 6px 20px;
+    transition: 0.3s ease;
+}
+
+#signin_signup .modal-body > div .form-group .form-control:focus {
+    background-color: #e5e5e53d;
+}
+
+#signin_signup .modal-body > div .form-control[type=submit] {
+    background: #EF7921;
+    border: 1px solid #EF7921;
+    box-sizing: border-box;
+    box-shadow: 0 5px 5px rgba(239, 121, 33, 0.2);
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#signin_signup .modal-body > div .form-group .form-control::placeholder {
+    color: rgba(106, 106, 106, 0.5);
+}
+
+#signin_signup .modal-body > div .form-group .form-control:focus,
+.btn.focus, .btn:focus {
+    box-shadow: inherit;
+}
+
+#signin_signup .delimiter-line {
+    width: 1px;
+    height: 100%;
+    display: block;
+    background-color: #C8C8C8;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+#signin_signup .modal-body > div .another-way span {
+    margin: 17px auto 17px;
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(106, 106, 106, 0.5);
+}
+
+#signin_signup .modal-body > div .another-way > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#signin_signup .modal-body > div .another-way > div > a {
+    text-decoration: none;
+}
+
+#signin_signup .modal-body > div .another-way > div button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 82px;
+    height: 30px;
+    font-size: 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px;
+}
+
+#signin_signup .modal-body > div .another-way > div .fb-social-btn {
+    background: #395185;
+    border: 1px solid transparent;
+    color: #FFFFFF;
+}
+
+#signin_signup .modal-body > div .another-way > div .google-social-btn {
+    background: #fff;
+    border: 1px solid rgba(106, 106, 106, 0.5);
+    color: rgba(106, 106, 106, 0.5);
+
+}
+
+/*************************************************************************/
+.show-participants #chat-aside-banner {
+    top: inherit !important;
+}
+
+.h50 {
+    height: 50% !important;
+}
+
+.show-chat #chat-aside-banner,
+.show-participants #participants-aside-banner {
+    transition: 1s ease;
+}
+
+.notes-bar {
+    background-color: #1f1f1f;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9999999999999;
+    display: none;
+    color: #fff;
+}
+
+.show-notes-bar {
+    display: block !important;
+}
+
+
+.notes-page-content {
+    margin-top: 100px;
+}
+
+.notes-page-content label {
+    width: 100%;
+}
+
+.notes-page-content #note-page {
+    min-height: 470px;
+    font-size: 14px;
+    line-height: 4ch;
+    background: linear-gradient(transparent, transparent calc(30px - 1px), #454545);
+    background-size: 97% 4ch;
+    color: #fff;
+    padding: 0 15px;
+    margin-top: 30px;
+    border-bottom: 2px solid #F47D31;
+    border-top: 2px solid #F47D31;
+}
+
+.download-note {
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    margin-right: 15px;
+    margin-top: 0;
+    height: auto;
+}
+
+.notes-bar .content-name {
+    color: #fff !important;
+}
+
+.notes-bar button {
+    /*width: 30px;*/
+    /*height: 30px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*margin-top: 5px;*/
+    margin-right: 10px;
+    color: #F47D31;
+    z-index: 999999999999;
+    opacity: 1;
+}
+
+
+/* @Medias */
+
+
+@media (max-width: 1500px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .wrapper {
+        height: auto;
+    }
+
+    .download-note {
+        margin-right: 70px !important;
+        margin-top: 15px !important;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .representative-picture-bar {
+
+        margin-left: -135px !important;
+    }
+}
+
+@media (max-width: 769px) {
+    .wrapper {
+        display: block;
+    }
+
+    #signin_signup .modal-dialog {
+        max-width: 500px;
+    }
+
+    #signin_signup .modal-body {
+        display: block;
+    }
+
+    #signin_signup .delimiter-line {
+        width: 100%;
+        height: 1px;
+    }
+
+    #signin_signup .modal-body > div {
+        width: 80%;
+        margin: auto;
+    }
+
+    #signin_signup .modal-body {
+        /*padding: 30px 30px;*/
+        padding: 0;
+    }
+
+    #signin_signup .modal-body .sign-in-bar {
+        padding-bottom: 30px;
+
+    }
+
+    #signin_signup .modal-body .sign-up-bar {
+        padding-top: 30px;
+    }
+
+
+    /* Sign-in and Sign-up Modal */
+
+
+}
+
+header {
+    width: 263px;
+    height: 100%;
+}
+
+nav .navbar-brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding-top: 30px;
+}
+
+nav .company-social-medias .social-item a:hover,
+.company-head-banner .login-register-bar button:hover {
+    background-color: #E5E5E5;
+}
+
+nav .navbar-brand > div img {
+    width: 100%;
+}
+
+nav .company-menu {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+    margin: auto;
+    margin-left: 90%;
+}
+
+nav .company-menu .menu-item {
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    margin-bottom: 41px;
+}
+
+nav .company-social-medias {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 68px;
+}
+
+nav .company-social-medias .social-item {
+    margin-bottom: 21px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .company-social-medias .social-item a {
+    border-radius: 50%;
+    border: 1px solid #EF7921;
+    color: #EF7921;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav .company-menu .menu-item a {
+    font-size: 20px;
+    line-height: 26px;
+    color: #434343;
+}
+
+nav .company-menu .menu-item a.active {
+    color: #EF7921;
+}
+
+/* /Header */
+
+
+footer {
+    width: 155px;
+    height: 15px;
+    color: #1D1D1D;
+    text-align: right;
+    margin-left: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.foot-body {
+
+}
+
+.foot-body p {
+    line-height: 14px;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+/* /Footer */
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.representative-picture-bar {
+    min-width: 832px;
+}
+
+.representative-picture-bar img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    max-height: 1080px;
+}
+
+.wrapper > .content:nth-child(2) {
+    width: 100%;
+}
+
+.company-head-banner {
+    max-width: 528px;
+    margin: 145px auto 0;
+    min-height: 750px
+}
+
+.company-head-banner .company-name {
+    margin-bottom: 20px;
+}
+
+.company-head-banner .company-name h1 {
+    font-size: 80px;
+    line-height: 90px;
+    color: #434343;
+    margin-bottom: 0;
+}
+
+.company-head-banner.howItWork-banner,
+.company-head-banner.about-us-banner {
+    min-width: 550px;
+}
+
+.company-head-banner .contact-form {
+    max-width: 460px;
+    margin: auto;
+}
+
+.company-head-banner .contact-form input,
+.company-head-banner .contact-form textarea {
+    width: 100%;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 20px;
+    opacity: 1;
+    color: #434343;
+    padding: 7px 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.company-head-banner .contact-form p {
+    text-align: left;
+    font-size: 21px;
+    color: #434343;
+}
+
+.company-head-banner .contact-form label {
+    text-align: left;
+    font-size: 16px;
+    color: #434343;
+    margin-bottom: 12px;
+    padding-left: 15px;
+}
+
+.company-head-banner .contact-form div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.company-head-banner .contact-form input[type=submit] {
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    width: 140px;
+    background: #EF7921 0 0 no-repeat padding-box;
+    border-radius: 28px;
+    text-align: center;
+    padding: 14px;
+    border: none;
+    outline: none;
+    margin-bottom: 0;
+
+}
+
+.company-head-banner.howItWork-banner .howItWork-columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -15px;
+
+}
+
+.company-head-banner.howItWork-banner .howItWork-columns > div {
+    width: 33.3%;
+    text-align: center;
+    margin-bottom: 35px;
+
+}
+
+.company-head-banner.howItWork-banner .howItWork-columns > div p {
+    width: 70%;
+    text-align: center;
+    margin: 5px auto 0;
+    font-size: 20px;
+    line-height: 26px;
+    color: #EF7921;
+    opacity: 1;
+}
+
+.company-head-banner.howItWork-banner .howItWork-columns > div:last-child p {
+    width: 100%;
+}
+
+.company-head-banner.howItWork-banner .howItWork-text-bar p,
+.company-head-banner.about-us-banner .about-us-text-bar p {
+    text-align: center;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: #434343;
+    opacity: 1;
+}
+
+.company-head-banner.howItWork-columns {
+    display: flex;
+}
+
+.company-head-banner .content-name h2 {
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: 0;
+    color: #434343;
+    opacity: 1;
+    border-bottom: 1px solid #D9D9D9;
+    text-align: center;
+    margin-bottom: 35px;
+
+}
+
+.company-head-banner .company-description {
+    margin-bottom: 20px;
+}
+
+.company-head-banner .company-description p {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 0;
+    color: #434343;
+
+}
+
+.company-head-banner .login-register-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#signin_signup {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.company-head-banner .login-register-bar button {
+    width: 48%;
+    height: 77px;
+    font-size: 20px;
+    line-height: 26px;
+    border: 2px solid #EF7921;
+    color: #EF7921;
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 20px;
+    outline: none;
+}
+
+.media-footer {
+    display: none;
+}
+
+/* /Section */
+
+/* Media Screens */
+#signin_signup {
+    left: -185px;
+}
+
+@media (max-width: 1600px) {
+    #signin_signup {
+        left: 0;
+    }
+}
+
+@media (max-width: 1500px) {
+    header, section {
+        width: 100%;
+    }
+
+    .wrapper > .content:last-child {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    nav .company-menu {
+        margin-left: 40%;
+        margin-top: 40%;
+    }
+
+    nav .company-social-medias .social-item {
+        justify-content: center;
+    }
+
+    footer {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    section {
+        height: auto;
+    }
+
+    header {
+        height: auto;
+    }
+
+    nav .navbar-brand {
+        padding-left: 30px;
+    }
+
+    nav .navbar-toggler:not(:disabled):not(.disabled) {
+        top: 30px;
+        right: 30px;
+        position: absolute;
+    }
+
+    section {
+        display: block;
+        margin-top: 150px;
+    }
+
+    .company-head-banner {
+        max-width: 100%;
+        margin: initial;
+    }
+
+    .company-head-banner .company-description {
+        max-width: 600px;
+    }
+
+    .company-head-banner .login-register-bar button {
+        width: 40%;
+    }
+
+    .company-head-banner .login-register-bar {
+        justify-content: flex-start;
+    }
+
+    .howItWork-text-bar p, .company-head-banner.about-us-banner .about-us-text-bar p {
+
+        padding: 0 15px;
+    }
+
+    .representative-picture-bar {
+        display: flex;
+        justify-content: flex-start;
+        margin: 30px auto 0;
+        min-width: initial;
+    }
+
+    .representative-picture-bar img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .media-footer {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .foot-body {
+        position: absolute;
+        bottom: 70px;
+    }
+
+    .company-head-banner {
+        min-height: initial !important;
+    }
+
+}
+
+@media (max-width: 769px) {
+    nav .company-menu {
+        margin-left: 0;
+        margin-top: 30px;
+        margin-right: 0;
+    }
+
+    .modal.modal--is-open {
+        width: 45%;
+    }
+
+    nav .company-social-medias {
+        display: flex;
+        margin-left: 30px;
+    }
+
+    nav .company-social-medias .social-item {
+        margin-bottom: 0;
+        margin-right: 24px;
+    }
+
+    .collapse.show {
+        display: block;
+        width: 100%;
+    }
+
+    nav .company-menu .menu-item {
+        transform: rotate(0);
+        writing-mode: inherit;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+
+    nav .navbar-brand {
+        justify-content: flex-start;
+    }
+
+    section {
+        margin-top: 50px;
+    }
+
+    .company-head-banner {
+        padding: 0 15px;
+    }
+
+    .representative-picture-bar {
+        padding: 0 15px;
+    }
+
+    .media-footer {
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    nav #navbarNavDropdown {
+        display: block !important;
+        margin-top: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-register-bar > button {
+        display: block;
+    }
+}
+
+.modal.modal--is-open {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 30%;
+    height: max-content;
+    padding: 0px 0 45px 0;
+
+    border-radius: 30px;
+    margin-left: 25%;
+
+    z-index: 2;
+}
+
+
+.close-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    padding-top: -43px;
+    position: absolute;
+    right: 0;
+}
+
+.errorBlock {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    color: #ff3336;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.errorBlock p {
+
+}
+
+.test {
+    width: 20%;
+    height: max-content;
+    /*border: 1px solid red;*/
+    position: absolute;
+    z-index: 20;
+    display: none;
+    margin-left: 8%;
+    margin-top: 8%;
+    background-color: white;
+}
+
+.testlogin {
+    width: 20%;
+    height: max-content;
+    /*border: 1px solid red;*/
+    position: absolute;
+    z-index: 20;
+    display: none;
+    margin-left: 8%;
+    margin-top: 8%;
+    background-color: white;
+}
+
+.forgotpassword {
+    width: 35%;
+    height: 20%;
+    /*border: 1px solid red;*/
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    display: none;
+    margin-left: 8%;
+    margin-top: 8%;
+    /*background-color: white;*/
+}
+
+.passtext {
+    width: 35%;
+    height: 20%;
+    /*border: 1px solid red;*/
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    display: none;
+    margin-left: 8%;
+    margin-top: 8%;
+    /*background-color: white;*/
+}
+
+@media (max-width: 1600px) {
+    header {
+        width: initial;
+        margin-left: 15px;
+    }
+
+    nav .company-menu,
+    nav .company-social-medias {
+        margin-left: 40%;
+    }
+
+    nav .company-social-medias .social-item {
+        justify-content: flex-start;
+    }
+
+    .representative-picture-bar {
+        min-width: initial;
+        display: flex;
+    }
+
+    .wrapper {
+        min-height: auto;
+    }
+
+    .company-head-banner {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .representative-picture-bar {
+        display: flex;
+        min-width: auto
+    }
+
+    #signin_signup .modal-dialog {
+        max-width: min-content;
+    }
+
+    /*    #signin_signup {
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 100px auto;
+        }*/
+    .testlogin, .test {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .forgotpassword {
+        background-color: transparent;
+        position: absolute;
+        left: 0;
+        margin: 8% auto 0;
+        width: 100%;
+        display: flex;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .testlogin, .test {
+        position: initial;
+    }
+}
+
+@media (max-width: 769px) {
+    #signin_signup .modal-dialog {
+        max-width: initial;
+        display: flex;
+        justify-content: center;
+    }
+
+    .company-head-banner .login-register-bar button {
+        font-size: 12px;
+        height: auto;
+        padding: 7px;
+    }
+
+    .company-head-banner {
+        min-height: initial;
+        margin-right: 0;
+    }
+
+    .company-head-banner.howItWork-banner, .company-head-banner.about-us-banner {
+        min-width: initial;
+    }
+}
+
+.ForgotPassword {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.resetPassword {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(148, 148, 148, 0.5);
+    border-radius: 20px;
+}
+
+.resetPassword .modal-dialog {
+    max-width: 370px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.thank-you-bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(148, 148, 148, 0.5);
+    margin: auto;
+}
+
+.thank-you-bar .modal-dialog {
+    max-width: 426px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+
+}
+
+.thank-you-bar .modal-content {
+    padding: 25px 15px 15px;
+}
+
+.thank-you-bar .forgot-form-bar {
+    margin: 0 auto;
+}
+
+.thank-you-bar .forgot-form-bar label {
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 23px;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+}
+
+.thank-you-bar .forgot-form-bar p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+    margin-bottom: 21px;
+}
+
+.thank-you-bar .forgot-form-bar div:last-child {
+    text-align: center;
+}
+
+.thank-you-bar .pass-changed {
+    text-align: center;
+    max-width: 60px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.thank-you-bar .pass-changed img {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+
+.thank-you-bar .forgot-form-bar button {
+    width: 91px;
+    height: 39px;
+    background: #EF7921 0 0 no-repeat padding-box;
+    border-radius: 20px;
+    opacity: 1;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.reset-pass-bar {
+    width: 370px;
+    border-radius: 15px;
+    margin: auto;
+    position: relative;
+    padding-bottom: 50px;
+    border: 1px solid transparent;
+}
+
+.reset-email-sent {
+    width: 350px;
+    border-radius: 15px;
+    margin: auto;
+    position: relative;
+    border: 1px solid transparent;
+}
+
+.email-sent {
+    width: 350px;
+    padding: 42px 0;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    margin: auto;
+    position: relative;
+}
+
+.close-bar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 15px 17px 0 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.content-name-bar {
+    margin: 30px auto 28px;
+}
+
+.content-name-bar h4 {
+    font-family: Roboto, Sans-Serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #434343;
+    text-align: center;
+    margin: 0;
+}
+
+.white-email-bar {
+    box-shadow: 0 0 10px rgba(148, 148, 148, 0.161);
+    padding: 22px 0;
+}
+
+.key-img-bar img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+
+}
+
+.white-email-bar > div {
+    max-width: 184px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+}
+
+.white-email-bar > div p {
+    margin: 0;
+
+}
+
+.forgot-form-bar {
+    max-width: 250px;
+    margin: 31px auto 0;
+
+}
+
+.forgot-form-bar div {
+    margin-bottom: 20px;
+}
+
+.forgot-form-bar div:last-child {
+    margin-bottom: 0;
+}
+
+.forgot-form-bar input {
+    border: 1px solid #6A6A6A;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 5px 20px;
+    color: #B4B4B4;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    text-align: left;
+    width: 100%;
+    outline: none;
+}
+
+.forgot-form-bar input[type=submit] {
+    padding: 8px 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #EF7921;
+    margin-top: 10px;
+    border: none;
+}
+
+.forgot-form-bar label {
+    display: block;
+    font-family: Roboto, Sans-Serif;
+    font-size: 11px;
+    line-height: 13px;
+    margin-bottom: 10px;
+    color: #B4B4B4;
+    margin-left: 20px;
+}
+
+.email-sent .email-sent-img-bar {
+    text-align: center;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #0265C9;
+}
+
+.email-sent .email-sent-info-bar {
+    max-width: 270px;
+    margin: auto;
+}
+
+.email-sent .email-sent-info-bar p {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.email-sent .email-sent-info-bar p:last-child {
+    font-size: 13px;
+    line-height: 17px;
+
+}
+
+.modal.modal--is-open-fgpassword {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 30%;
+    height: max-content;
+    padding: 0px 0 45px 0;
+
+    border-radius: 30px;
+    margin-left: 40%;
+    margin-top: 20%;
+
+    z-index: 2;
+}
+
+.email-sent .email-sent-info-bar p .mark-email {
+    color: #f15e2a;
+    font-weight: 700;
+}
+
+.email-sent .email-sent-info-bar p a {
+    color: #5899db;
+}
+
+@media (max-width: 1200px) {
+    .company-head-banner {
+        min-height: 530px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .reset-pass-bar,
+    .email-sent {
+        max-width: 100%;
+        width: auto;
+    }
+
+    .email-sent .email-sent-info-bar {
+        padding: 0 15px;
+    }
+
+    .forgot-form-bar {
+        padding: 0 15px;
+    }
+
+    #ForgotPassword .modal-content {
+        max-width: initial;
+    }
+
+    .company-head-banner .company-name h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .company-head-banner .company-description p {
+        font-size: 14px;
+    }
+
+    #profile .modal-content, #settings .modal-content, .modal-content, .settings-banner .audio-content .test-banner .system-label {
+        margin: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .thank-you-bar {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "client": {
+    "client_id": "704933951753-iop7kf33o2nrgad96ks5rd0tr2a1spn6.apps.googleusercontent.com",
+    "client_secret": "7ThJWTdVYXwHMOZnK-VnYB-9",
+    "redirect_uris": ["http://localhost:8080/auth/google/callback"]
+  },
+
+
+
+  "credentials": {
+    "access_token": "access_token",
+    "token_type": "Bearer",
+    "expires_in": "3600",
+    "refresh_token": "your refresh_token"
+  }
+}
+
+
+
+
+
