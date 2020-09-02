@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ba57598-7d40-4daf-b20b-94cec63a5e32" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Profile/Contacts/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Profile/Contacts/contacts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Profile/Settings/settings.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Profile/Settings/settings.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Profile/Settings/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Profile/Settings/settings.js" afterDir="false" />
-    </list>
+    <list default="true" id="7ba57598-7d40-4daf-b20b-94cec63a5e32" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -194,10 +189,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="766" />
-    <option name="y" value="239" />
-    <option name="width" value="779" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="952" />
+    <option name="y" value="-8" />
+    <option name="width" value="976" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectId" id="1f5c1oyoOzf1BR4zsJ6tQ5qDzWe" />
@@ -338,12 +333,12 @@
       <workItem from="1598850910378" duration="4930000" />
       <workItem from="1598937395599" duration="695000" />
       <workItem from="1598939429669" duration="1634000" />
-      <workItem from="1599024239809" duration="593000" />
+      <workItem from="1599024239809" duration="1050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59414000" />
+    <option name="totallyTimeSpent" value="59871000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -355,7 +350,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
