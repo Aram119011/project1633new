@@ -31,6 +31,7 @@ import imgJoinMeeting from '../../images/icons/JoinMeeting-icon.png';
 import imgGroupChat from '../../images/icons/GroupChat-icon.png';
 import imgScheduleMeeting from '../../images/icons/ScheduleMeeting-icon.png';
 import Pricing from "../Pricing/pricing";
+import {AuthAPI} from "../../API/api";
 
 
 class Contacts extends React.Component {
@@ -54,6 +55,18 @@ class Contacts extends React.Component {
         };
     }
 
+    logOutAuth = (e) => {
+        e.preventDefault();
+        AuthAPI.logOutAuth()
+            // .then(res => console.log(res,'logoooo'));
+            .then(res =>{
+                console.log(res);
+                this.props.history.push('/')
+            });
+
+    };
+
+
     toggleDropDown = () => {
         this.setState(state => {
             return {
@@ -63,7 +76,7 @@ class Contacts extends React.Component {
         })
     };
 
-    closeDropDown =()=>{
+    closeDropDown = () => {
         this.setState({dropDown: false});
     };
 
@@ -91,6 +104,7 @@ class Contacts extends React.Component {
     openModalPricing() {
         this.setState({isModalPricingOpen: true});
     }
+
     // closeModalPricing() {
     //     this.setState({isModalPricingOpen: false});
     // }
@@ -119,6 +133,7 @@ class Contacts extends React.Component {
 
     render() {
 
+
         // axios.get('http://localhost:5000/api/auth/profile')
         // axios.get('https://rocky-inlet-34170.herokuapp.com/api/auth/profile')
         //     .then(res => {
@@ -127,11 +142,13 @@ class Contacts extends React.Component {
         //
         //     console.log(errr, 'err')
         // });
+
+
         return (
             <div className="bodyProfile">
 
                 {
-                    this.state.isModalOpen ? <MyProfile closeModal={this.closeModal} /> : null
+                    this.state.isModalOpen ? <MyProfile closeModal={this.closeModal}/> : null
                 }
 
                 {
@@ -207,7 +224,8 @@ class Contacts extends React.Component {
                                                     <li>
                                                         <button onClick={() => {
                                                             this.closeDropDown();
-                                                            this.openModal()}} name="profile"
+                                                            this.openModal()
+                                                        }} name="profile"
                                                                 className="btn p-0"
                                                                 data-toggle="modal"
                                                                 data-target="#profile">
@@ -215,7 +233,17 @@ class Contacts extends React.Component {
                                                         </button>
                                                     </li>
                                                     <li>
-                                                        <button onClick={() => this.openModalSetings()} name="settings"
+                                                        {/*<button onClick={() => */}
+                                                        {/*    this.openModalSetings()} name="settings"*/}
+                                                        {/*        className="btn p-0"*/}
+                                                        {/*        data-toggle="modal"*/}
+                                                        {/*        data-target="#settings">*/}
+                                                        {/*    Settings*/}
+                                                        {/*</button>*/}
+                                                        <button onClick={() => {
+                                                            this.closeDropDown();
+                                                            this.openModalSetings()
+                                                        }} name="profile"
                                                                 className="btn p-0"
                                                                 data-toggle="modal"
                                                                 data-target="#settings">
@@ -235,11 +263,18 @@ class Contacts extends React.Component {
                                                     {/*{      Log Out}*/}
 
                                                     {/*<button>*/}
-                                                        <li className="mb-0">
-                                                            <Link className="dropdown-item" to="">
-                                                                Log Out
-                                                            </Link>
-                                                        </li>
+                                                    <li className="mb-0">
+                                                        {/*<Link className="dropdown-item" to="">*/}
+                                                        {/*    Log Out*/}
+                                                        {/*</Link>*/}
+                                                        <button onClick={(e)=> this.logOutAuth(e)}
+                                                                className="btn p-0"
+                                                                data-toggle="modal"
+                                                                data-target="#logout">
+                                                            Log Out
+                                                        </button>
+
+                                                    </li>
                                                     {/*</button>*/}
 
                                                 </ul>

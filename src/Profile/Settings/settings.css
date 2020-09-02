@@ -98,13 +98,21 @@
 }
 
 .settings-banner .video-bar {
-    /*width: 420px;*/
-    height: 200px;
+    /*width: 399px;*/
+    height: 284px;
     display: flex;
     justify-content: center;
     margin: 30px auto;
     align-items: center;
     background-color: #DFDFDF;
+    /*width: 424px;*/
+    /*border-radius: 45px;*/
+    /*height: 313px;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*margin: 30px auto;*/
+    /*align-items: center;*/
+    /*background-color: #DFDFDF;*/
 }
 
 #settings .save-changes-bar {
